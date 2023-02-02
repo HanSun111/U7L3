@@ -45,7 +45,7 @@ public class CheckTester
     {
         setItems(numItems);
 
-        CustomerCheck check = new CustomerCheck(testItems);
+        CustomerChecker check = new CustomerChecker(testItems);
 
         double actual = check.totalPrices();
 
@@ -142,7 +142,7 @@ public class CheckTester
             allItems.add(item3);
         }
 
-        CustomerCheck check = new CustomerCheck(allItems);
+        CustomerChecker check = new CustomerChecker(allItems);
 
         boolean actual = check.couponApplies();
 
@@ -232,7 +232,7 @@ public class CheckTester
             allItems.add(item3);
         }
 
-        CustomerCheck check = new CustomerCheck(allItems);
+        CustomerChecker check = new CustomerChecker(allItems);
 
         double actual = check.calculateCheck();
 
